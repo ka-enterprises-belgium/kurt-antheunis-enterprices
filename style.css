@@ -1,1 +1,132 @@
+/* Google Fonts voor de luxe uitstraling */
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
 
+:root {
+    --ivoor: #FFFFF0;
+    --goud: #D4AF37;
+    --antraciet: #36454F;
+    --diepblauw: #1a2a3a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    background-color: var(--ivoor);
+    color: var(--antraciet);
+    overflow-x: hidden;
+}
+
+/* De foto CCF_000008.jpg blijft staan terwijl je scrolt */
+.bg-fixed-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('CCF_000008.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.35; /* Transparantie voor leesbaarheid */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-header {
+    text-align: center;
+    padding: 100px 0 60px;
+}
+
+.brand-name {
+    color: var(--goud);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.logo-wrapper {
+    width: 250px;
+    height: 250px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.logo {
+    max-width: 80%;
+    height: auto;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.content-card {
+    background: rgba(255, 255, 240, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 60px;
+    margin-bottom: 50px;
+    border-left: 4px solid var(--goud);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: var(--diepblauw);
+    font-size: 2rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: var(--goud);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.btn-gold {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--antraciet);
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-gold:hover {
+    background: var(--goud);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    opacity: 0.6;
+}
