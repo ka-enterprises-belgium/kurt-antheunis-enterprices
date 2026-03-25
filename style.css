@@ -45,7 +45,6 @@ body {
     color: var(--goud);
     font-size: clamp(2rem, 5vw, 3.5rem);
     letter-spacing: 0.35em;
-    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
