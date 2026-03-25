@@ -40,7 +40,8 @@ body {
     padding: 100px 0 60px;
 }
 
-.brand-name {
+   .brand-name {
+    font-family: 'Carrois Gothic SC', sans-serif;
     color: var(--goud);
     font-size: clamp(2rem, 5vw, 3.5rem);
     letter-spacing: 0.35em;
